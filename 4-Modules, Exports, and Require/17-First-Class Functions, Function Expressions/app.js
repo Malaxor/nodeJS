@@ -1,4 +1,7 @@
 
+const moduleGreet = require('./greet');
+moduleGreet();
+
 // function statement 
 function greet() {
    console.log('Hello');
