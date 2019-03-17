@@ -1,4 +1,5 @@
-// json files aren't explicitly exported  
+
+// json files aren't explicitly exported (no need to module.export anything from the file)
 const greetings = require('./greetings.json');
 
 function greet() {
