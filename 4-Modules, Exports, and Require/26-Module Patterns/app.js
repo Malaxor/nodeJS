@@ -5,6 +5,7 @@ greet();
 
 // pattern 2
 const greet2a = require('./greet2').greet;
+greet2a();
 // or
 const greet2b = require('./greet2');
 greet2b.greet();
