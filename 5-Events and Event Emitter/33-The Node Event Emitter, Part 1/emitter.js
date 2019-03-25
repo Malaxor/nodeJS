@@ -10,6 +10,12 @@ Emitter.prototype.on = function(type, listener) {
 }
 Emitter.prototype.emit = function(type) {
 
-   this.events[type] && this.events[type].forEach(listener => listener());     
+   if(this.events[type]) {
+      
+      this.events[type].forEach(listener => listener());
+   } 
+   else {
+      throw new Error("This event does not exist");    
+   }     
 }
 module.exports = Emitter;
