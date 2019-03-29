@@ -1,4 +1,3 @@
-'use strict';
 
 const EventEmtr = require('events');
 const util = require('util');
