@@ -1,4 +1,3 @@
-
 const greeting = 'Hello from module 5';
 
 function greet() {

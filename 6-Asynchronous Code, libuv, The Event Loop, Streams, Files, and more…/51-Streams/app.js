@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 
 const readable = fs.createReadStream(
@@ -9,7 +8,6 @@ const readable = fs.createReadStream(
 const writable = fs.createWriteStream(__dirname + '/greetcopy.txt');
 
 readable.on('data', chunk => {
-
    console.log(chunk.length);
    writable.write(chunk);
 });

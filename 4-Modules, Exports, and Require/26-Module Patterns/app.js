@@ -1,4 +1,3 @@
-
 // pattern 1
 const greet = require('./greet1');
 greet();
