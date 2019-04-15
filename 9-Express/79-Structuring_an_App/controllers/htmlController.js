@@ -7,7 +7,7 @@ module.exports = app => {
 		res.render('index');
 	});
 	app.get('/person/:id', (req, res) => {
-		res.render('person', { ID: req.params.id, Qstr: req.query.qstr });
+		res.render('person', { id: req.params.id, Qstr: req.query.qstr });
 	});
 	app.post('/person', urlEncodedParser, (req, res) => {
 		res.send('Thank you!');
